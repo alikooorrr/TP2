@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_margin="15dp"
+    tools:context=".Description">
+
+    <RelativeLayout
+        android:background="@color/argile"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="25dp">
+        <TextView
+            android:id="@+id/cleprenom"
+            android:text="Prénom:"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/colorPrimaryDark"
+            android:textStyle="bold"/>
+        <TextView
+            android:id="@+id/valueprenom"
+            android:layout_width="wrap_content"
+            android:text="Alia"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"/>
+
+        <TextView
+            android:id="@+id/clenom"
+            android:layout_marginTop="10dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Nom"
+            android:layout_below="@+id/cleprenom"
+            android:textColor="@color/colorPrimaryDark"
+            android:textStyle="bold"/>
+        <TextView
+            android:id="@+id/valuenom"
+            android:layout_marginTop="10dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Diagne"
+            android:layout_alignParentRight="true"
+            android:layout_below="@+id/valueprenom"/>
+
+        <TextView
+            android:id="@+id/cleddn"
+            android:layout_marginTop="10dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Date de naissance:"
+            android:layout_below="@+id/clenom"
+            android:textColor="@color/colorPrimaryDark"
+            android:textStyle="bold"/>
+        <TextView
+            android:id="@+id/valueddn"
+            android:layout_marginTop="10dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="1996-09-25"
+            android:layout_alignParentRight="true"
+            android:layout_below="@+id/valuenom"/>
+
+        <TextView
+            android:id="@+id/clesexe"
+            android:layout_marginTop="10dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Sexe:"
+            android:layout_below="@+id/cleddn"
+            android:textColor="@color/colorPrimaryDark"
+            android:textStyle="bold"/>
+        <TextView
+            android:id="@+id/valuesexe"
+            android:layout_marginTop="10dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Masculin"
+            android:layout_alignParentRight="true"
+            android:layout_below="@+id/valueddn"/>
+
+        <TextView
+            android:id="@+id/cleprogramme"
+            android:layout_marginTop="10dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Programme"
+            android:layout_below="@+id/clesexe"
+            android:textColor="@color/colorPrimaryDark"
+            android:textStyle="bold"/>
+        <TextView
+            android:id="@+id/valueprogramme"
+            android:layout_marginTop="10dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="GEL"
+            android:layout_alignParentRight="true"
+            android:layout_below="@+id/valuesexe"/>
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="190dp">
+
+
+        <TextView
+            android:id="@+id/titre"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Description"
+            android:textColor="@color/colorPrimaryDark"
+            android:textSize="20dp"
+            android:textStyle="bold"/>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/textdescription"
+            android:layout_below="@id/titre"/>
+    </RelativeLayout>
+</RelativeLayout>
